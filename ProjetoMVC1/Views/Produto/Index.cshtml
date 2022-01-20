@@ -1,0 +1,14 @@
+﻿@model List<ProductViewModel>
+
+<div>
+    <label>Produto</label>
+    
+    @Html.ActionLink("Novo Produto", "Novo", "Produto")
+
+    @foreach (var produto in Model)
+    {
+        <ul>
+            <li>@produto.Descricao </li>
+        </ul>
+    }
+</div>
